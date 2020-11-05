@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<title>JW Portfolio</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   
+<style>
+    .parallax {
+      /* The image used */
+      background-image: url('para1.png');
+
+      /* Full height */
+      height: 50%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallaxx {
+      /* The image used */
+      background-image: url('para2.png');
+
+      /* Full height */
+      height: 50%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: lightgray;
+  font-family: Arial;
+  font-size: 17px;
+    overflow: auto;
+    height: 100%;
+
+}
+
+html{
+    overflow: hidden;
+    height: 100%;
+        }
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header"  style = " position : absolute; float : left;">
+      <a class="navbar-brand"  href="#">JW</a>
+    </div>
+    <ul class="nav navbar-nav" style = " position : absolute; display: inline; right: 10px;">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="gifs.html">GIFS</a></li>
+      <li><a href="#">3D</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">JAYANT WAGHMARE</h1>
+        <p class="lead mb-0">GRAPHICS AND 3D PORTFOLIO</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br> <br> <br>
+   <!-- Carousel -->
+<div class="container-fluid">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" ></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2" class="active"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.png" alt="TUNNEL" width="1200" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="2.png" alt="TUNNEL" width="1200" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="3.png" alt="RINGS OF GOLD" width="1200" height="600">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+</div>
+
+<br><br>
+
+
+<div class="parallax" ></div>
+
+<br>
+
+
+<div class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="cr1.png" alt="City" width="400" height="300">
+        <p><strong>City</strong></p>
+        <p>Made in Blender 2.79</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="cr2.png" alt="City" width="400" height="300">
+        <p><strong>City</strong></p>
+        <p>Made in Blender 2.79</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="cr3.png" alt="City" width="400" height="300">
+       <p><strong>City</strong></p>
+        <p>Made in Blender 2.79</p>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="parallaxx" ></div>
+
+<br><br><br>
+
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+         <div style="height:300px; width:320px; background-color:gray;font-size:20px; ">
+         <div class="row text-centre" >
+         
+	 <div class="col-sm-12">
+         <h3  class="text-center">   About Me  </h3>
+         </div>
+     </div>
+    </div>
+ </div>
+    </div>
+        
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+       <div style="height:300px; width:320px; background-color:gray;font-size:20px; ">
+        <div class="row" >
+         <div class="col-sm-12">
+         <h3  class="text-center">   About Me  </h3>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div style="height:300px; width:320px; background-color:gray;font-size:20px; ">
+      <div class="row" >
+    <div class="col-sm-12">
+       <h3  class="text-center">   About Me  </h3>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+
+
+</div>
+
+
+
+<br><br><br>
+
+  <div style="height:50px;background-color:darkgray;font-size:20px">
+   <div class="row" >
+     <div class="col-sm-12">
+        <h3  class="text-center">  Footer  </h3>
+     </div>
+   </div>
+  </div>
+
+</body>
+</html>
